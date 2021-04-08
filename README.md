@@ -1,6 +1,10 @@
 # sdg-006-frontend
 
-## Project setup
+## Project setup 
+
+``` 
+make sure you run npm install to make this project work
+```
 ```
 npm install
 ```
