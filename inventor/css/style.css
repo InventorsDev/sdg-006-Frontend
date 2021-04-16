@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 
 /* ====== Varible CSS ====== */
 :root{
@@ -49,6 +50,7 @@
 /* Colors */
 :root{
     --black: #000000;
+    --lightblack: #303030;
     --white: #FFFFFF;
     --smoke-white: #f1f1f6;
     --whitish: #FCFBFE;
@@ -68,10 +70,10 @@ html{
 body{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
+    background-color: var(--white);
     /* background: #E5E5E5; */
     /* margin: var(--mb-2) 0 0 0 ; */
 }
-
 h1,h2,h3{
     margin: 0;
 }
@@ -91,7 +93,22 @@ img{
     height: auto;
     display: block;
 }
-/* ========= Right side image position of the signin and signout page ============= */
+
+/*=============== Mobile display none ============*/
+.banner .mobile-signin{
+    display: none;
+ }
+ 
+ .mobile-sign-in-google{
+     display: none;
+ }
+ 
+ .mobile__divider{
+     display: none;
+ }
+ /*============== End Mobile sign in display none ===========*/
+
+ /* ========= Right side image position of the signin and signout page ============= */
 .wave{
     position: fixed;
     height: 100%;
@@ -102,12 +119,12 @@ img{
 /* ========= End Right side image position of the signin and signout page ============= */
 
 
+
 .container{
     margin-top: 1.5rem;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    position: relative;
     height: 100%;
-    width: 100vw;
+    width: 100% !important;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 7rem;
@@ -121,7 +138,7 @@ img{
     margin-top: var(--mb-4);
 }
 
-.banner p{
+.banner > p{
     font-size: medium;
     color: var(--grey);
     font-weight: 300;
@@ -129,6 +146,7 @@ img{
 
 .sign-in-google{
     text-align: center;
+  
 }
 
 .sign-in-google button{
@@ -136,6 +154,7 @@ img{
     justify-content: center;
     display: inline-block;
     border: 1px solid #E0E0E0;
+    color: var(--lightblack);
     box-shadow: none;
     box-sizing: border-box;
     cursor: pointer;
@@ -144,15 +163,22 @@ img{
     border-radius: 8px;
     text-transform: none;
     font-weight: 600;
+    /* font-size: 16px; */
     margin-top: var(--mb-3);
+    margin-left: 0;
+    /* line-height: 16px; */
 
+}
+
+.sign-in-google img{
+    margin-top: -3px;
 }
 
 .sign-in-google button:hover{
     box-shadow: 0px 0px 14px rgba(244, 105, 76, 0.15);
 }
 
- .banner .google{
+.banner .google{
    margin: -5px;
 } 
 
@@ -185,9 +211,11 @@ img{
     top: 50%;
     right: 30px;
 }
+
 label{
     margin-bottom: unset ;
-    color: #303030;
+    font-weight: 400;
+    color: var(--lightblack);
 }
 
 /* ========= form input style =========== */
@@ -322,24 +350,6 @@ form .sign-up:hover{
     letter-spacing: -0.01em;
     color: var(--darkgrey);
 }
-
-/* ============== form-image =============== */
-/* .form-image{
-    background-color: var(--purple);
-    border-bottom-left-radius: 50%;
-    width: 100%;
-} */
-/* 
-.form-image .overlay{
-    background-color: var(--dark-pink);
-    border-bottom-left-radius: 50%;
-    height: 80%;
-    position: relative;
-    top: 0;
-    z-index: 1;
-    transform: rotate(90);
-} */
-
 
 /* ========== Sign in html ============*/
 .joining{
@@ -498,7 +508,7 @@ form .sign-up:hover{
 }
 /*============ Banner ==============*/
 .bannerr{
-    background-image: url(../img/BAckgroundsArtboard\ 1\ copy.jpg);
+    background-image: url(../img/bgBlue.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -546,15 +556,6 @@ form .sign-up:hover{
     line-height: 55px;
     padding-left: var(--mb-1);
 }
-
-/* .search-field input{
-    background: black;
-    outline: none;
-    border: none;
-    color:#303030;
-    line-height: 1;
-    font-size: var(--normal-font-size);
-} */
 
 .search-field input::placeholder{
     color: #AEAEAE;
@@ -802,3 +803,138 @@ input[type="submit"]{
 .popular-list ul{
    display: inline-flex;
 } */
+
+/* ==================================== */
+@media screen and (max-width: 375px){
+    .wave{
+        display: none;
+    }
+    /* Mobile View For the Sign in Page */
+    .container{
+        grid-template-columns: unset;
+        height: 100%;
+
+    }
+
+    .banner h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--black);
+        margin-top: var(--mb-2);
+        line-height: 40px;
+    }
+
+    .banner .divider{
+        display: none;
+    }
+
+    .banner .mobile-signin{
+        display: block;
+    }
+
+    .banner .discription{
+        font-size: medium ;
+        color: var(--grey);
+        font-weight: 400;
+        padding-right: 3rem;
+        line-height: 1.4rem;
+    }
+
+    .banner .mobile-signin{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--black);
+        margin: var(--mb-3) 0 var(--mb-3) 0;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .input-field{
+        width: 100%; 
+        max-width: 100%;
+        display:grid;
+        grid-template-columns: 18% 85%; 
+        padding: unset;
+        /* padding-left: 10px; */
+        font-size: var(--normal-font-size);
+        /* margin-right: 50px; */
+    }
+
+    .input-field img{
+        padding-left: 15px;
+    }
+
+    form .sign-up{
+        width:100%;
+    }
+
+    .sign-in-google button{
+        width:100%;
+        margin-top: unset;
+
+    }
+
+    .terms{
+        display: none;
+    }
+
+    .forget-password{
+        margin-top: -4px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    form .sign-up{
+        width: 100%;
+        margin-top: var(--mb-3);
+        margin-left: 0;
+    }
+
+    .divider{
+        text-align: center;
+        margin:0;
+        padding: var(--mb-3);
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--lightblack);
+    }
+
+    .account{
+        padding: 0 10%;
+        position: absolute;
+        /* width: 100%; */
+        /* height: 100%; */
+        align-items: center;
+        bottom: 0;
+        /* display: block; */
+    }
+
+    .mobile__divider{
+        display: block;
+        text-align: center;
+        font-style: normal;
+        margin:0;
+        padding: var(--mb-3);
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--lightblack);
+    }
+    
+    .sign-in-google{
+        display: none;
+    }
+
+    .mobile-sign-in-google{
+        display: block;
+    }
+
+    /* End Mobile View For the Sign in Page */
+
+    /* Sigin.html mobile responsiveness */
+    .joining{
+        display: none;
+    }
+}
