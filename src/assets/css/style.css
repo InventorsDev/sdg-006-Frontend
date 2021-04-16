@@ -324,23 +324,6 @@ form .sign-up:hover{
     color: var(--darkgrey);
 }
 
-/* ============== form-image =============== */
-/* .form-image{
-    background-color: var(--purple);
-    border-bottom-left-radius: 50%;
-    width: 100%;
-} */
-/* 
-.form-image .overlay{
-    background-color: var(--dark-pink);
-    border-bottom-left-radius: 50%;
-    height: 80%;
-    position: relative;
-    top: 0;
-    z-index: 1;
-    transform: rotate(90);
-} */
-
 
 /* ========== Sign in html ============*/
 .joining{
@@ -355,7 +338,7 @@ form .sign-up:hover{
 
 /*========== Home.HTML ===============  */
 
-/* ========== Navbar ============ */
+/* ========== bannarr ============ */
 .navbar-page{
     position: fixed !important;
     background-color: transparent;
@@ -498,12 +481,13 @@ form .sign-up:hover{
 
 }
 /*============ Banner ==============*/
-.bannerr{
-    background-image: url(../img/bgBlue.jpg);
+/* .bannerr{
+    background: url(../img/bgBlue.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -547,14 +531,7 @@ form .sign-up:hover{
     padding-left: var(--mb-1);
 }
 
-/* .search-field input{
-    background: black;
-    outline: none;
-    border: none;
-    color:#303030;
-    line-height: 1;
-    font-size: var(--normal-font-size);
-} */
+
 
 .search-field input::placeholder{
     color: #AEAEAE;
@@ -651,23 +628,24 @@ input[type="submit"]{
 
 .popular-list ul{
    display: inline-flex;
-}
+} */
 
 
 /* Home Page 2 */
 /*============ Banner ==============*/
-/* .bannerr{
-    background-image: url(../img/BAckgroundsArtboard\ 1.jpg);
+.bannerr{
+    background-color: red !important;
+    /* background-image: url(../img/bgBlue.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
-    width: 100%;
-    position: relative;
+    width: 100%;  */
+    /* position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 4.0rem;
+    padding-left: 4.0rem;*/
 }
 
 .bannerr .search-field{
@@ -801,4 +779,4 @@ input[type="submit"]{
 
 .popular-list ul{
    display: inline-flex;
-} */
+}
