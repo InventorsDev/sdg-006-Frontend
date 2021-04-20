@@ -1,6 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Mountains+of+Christmas&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 
 *{
   box-sizing: border-box;
@@ -21,49 +19,35 @@ a{
     text-decoration: none;
 }
 
-/* img{
+img{
     max-width: 100%;
-    height: auto; */
-    /* display: block; 
-}*/
+    height: auto;
+}
 body{
     font-family:  'Poppins', sans-serif;
     font-size: 0.938rem;;
     background-color: var(--white);
-    /* background: #E5E5E5; */
-    /* margin: var(--mb-2) 0 0 0 ; */
 }
 
-.navbar-page{
+header{
     position: fixed;
-    background-color: transparent;
     width: 100%;
-    padding: 5px 0;
     top:0;
     left: 0;
     z-index: 999;
     transition: .3s linear;
 }
 
-.sticky{
-    background-color: rgba(0,0,0,.9);
-    padding: 18px 0;
+.navbar-page{
+    background-color: transparent;
+    padding: .5rem 2rem;
 }
 
 .inner-width{
-    max-width: 1250px;
+    /* max-width: 1250px; */
     margin: auto;
     padding-top: 5px;
 }
-
-.inner-width em{
-    font-size: 50px;
-}
-
-.inner-width .header{
-    font-size: 54px;
-}
-
 
 .navbar-page .inner-width{
     display: flex;
@@ -78,59 +62,25 @@ body{
     background-image: url(../img/dashboard/logo.png);
     /* display: none; */
 }
-.menu-toggler{
-    background: none;
-    width: 30px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    outline: none;
-    z-index: 999;
-    display: none;
+
+.toggle__nav{
+    background: black;
+    width: 8px;
+    height: 10px;
 }
 
-.menu-toggler span{
-    display: block;
-    height: 2px;
-    background-color: #fff;
-    border: none;
-    margin: 6px 0;
-    position: relative;
-    transition: .3s linear;
-} 
 .navbar-menu a{
     color: #7E7E7E;
     font-family: sans-serif;
     font-size: 18px;
     font-weight:400;
-    margin-left: 10px;
+    margin-left: 1rem;
     transition: .2s linear;
-    padding: 8px 10px;
-}
-
-.navbar-menu .signin-button{
-    /* background-color: var(--purple); */
-    background-color: var(--dark-pink);
-    padding: 10px 40px 10px 40px;
-    border-radius: 15px;
+    /* padding: 8px 10px; */
 }
 
 .navbar-menu a:hover{
    color: var(--purple);
-}
-
-.icon{
-    cursor: pointer;
-    color: #fff;
-    font-size: 20px;
-    display: none;
-}
-
-.icon.cancel-btn{
-    position: absolute;
-    top: 20px;
-    right: 30px;
 }
 
 .box input{
@@ -145,25 +95,31 @@ body{
     position: relative;
 }
 
-form img{
+.box > form img{
     position: absolute;
-    left: 12px;
-    top: 10px;
+    left: 17px;
+    top: 13px;
     z-index: 5;
 }
 
-input[type="text"]{
+.box input[type="text"]{
     position: relative;
     background: var(--white);
     width: 350px;
     height: 50px;
     border:1px solid #C4C4C4;
     outline: none  ;
-    padding: 0 50px;
+    padding: 0 53px;
     border-radius: 13PX;
     font-size: var(--normal-font-size);
 
 } 
+
+input::placeholder{
+    color: #AEAEAE;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 input[type="submit"]{
     left: -2rem;
@@ -183,25 +139,21 @@ input[type="submit"]{
     text-transform: lowercase;
 }
 
-input::placeholder{
-    color: #AEAEAE;
-    font-size: 14px;
-    font-weight: 400;
-}
+
 
 .bottom_nav{
     width: 100%;
     border: 0.002rem solid  #dbd8d8;
     border-right: none;
     border-left: none;
-    height: 45px;
-    padding: 0 60px;
+    height: 40px;
+    padding: 0 2rem;
     margin-top: 12px;
   }
   
 .bottom_nav ul{
     width: 100%;
-    height: 45px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -213,7 +165,6 @@ input::placeholder{
     font-weight: 400;
     color: #7E7E7E
 }
-
 
 /* SideBar Section */
 .sideBarWrapper{
@@ -548,3 +499,181 @@ input::placeholder{
     display: flex;
     align-items: center;
 }
+
+/* ============== Dashboard 2 =========================*/
+.dashII__left{
+    padding-top: 1.5rem;
+    width: 80%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #18191a  #18191a;
+    /* background-color: red; */
+}
+
+.dashII__right{
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #18191a  #18191a;
+    /* background-color: red; */
+}
+
+
+/*=========== Customise Scroll Bar Begin ================ */
+.dashII__scroll::-webkit-scrollbar{
+    width: 10px;
+}
+
+.dashII__scroll::-webkit-scrollbar-track{
+    border: 1px solid #E5E5E5;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.dashII__scroll::-webkit-scrollbar-track:hover{
+    background: #fff;
+}
+
+.dashII__scroll:hover::-webkit-scrollbar-thumb{
+    background: #C4C4C4;
+    border-radius: 23px;
+    height: 4px;
+}
+/*============= End Customise Scroll bar ====================*/
+
+/* ============== Search Form ===================== */
+.dashII__form form{
+    display: flex;
+}
+.dashII__form > form .fa-envelope{
+    position: absolute;
+    left: 17px;
+    top: 13px;
+    z-index: 5;
+}
+.dashII__form input[type="text"]{
+    position: relative;
+    background: var(--white);
+    max-width: 80%;
+    width: 650px;
+    height: 50px;
+    border:1px solid #C4C4C4;
+    outline: none  ;
+    padding: 0 50px;
+    border-radius: 13PX;
+    font-size: var(--normal-font-size);
+} 
+
+.dashII__form .filter{
+    width: 48px;
+    height: 48px;
+    background-color: #6C5DD3;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashII__left > h1{
+    font-weight: 700;
+    line-height: 54px;
+    font-size: 36px;
+    color: #303030;
+    margin-bottom: .4rem;
+}
+
+
+.expert__online{
+    height: 80px;
+    width:100%;
+    margin: 1.6rem 0 1.8rem 0;
+    display: flex;
+    /* position: relative; */
+}
+
+.expert__online .online__pic{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50px;
+
+}
+
+.active__expert{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    /* background-color: black; */
+    margin-right: 1.3rem;
+}
+
+.expert__online .online{
+    position: absolute;
+    top:0;
+    right: 10px;
+    /* right:0; */
+    /* top:0px; */
+}
+
+/* ============ Popular Card ================ */
+.popular > h1{
+    color: #303030;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 1rem;
+}
+.popular .popular__list{
+    height: 309px;
+    width: 100%;
+    display: flex;
+}
+
+.popular__list .popular__card{
+    width: 236px;
+    height: 309px;
+    border: 1px solid #E9E7F8;
+    border-radius: 8px;
+    padding: 10px 13px 10px 13px;
+    margin-right: 1.5rem;
+}
+
+.popular__list .popular__card__image{
+    width: 204px;
+    height: 152px;
+    /* background-color: black; */
+    border-radius: 10px;
+}
+
+.popular__card__body h1{
+    font-size: 18px;
+    color: #303030;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 21px;
+}
+
+.popular__card__body span{
+    font-size: 10px;
+    font-weight: 400;
+    color: #7E7E7E;
+    display: block;
+    line-height: 15px;
+    text-transform: capitalize;
+}
+
+.popular__card__body p{
+    font-size: 11px;
+    font-weight: normal;
+    color: #303030;
+    line-height: 15px;
+    text-transform: capitalize;
+}
+
+.popular__list .popular__card__reviews{
+    display:flex;
+    align-items: flex-end;
+}
+
+/* Dashboard2 scroll bar */
