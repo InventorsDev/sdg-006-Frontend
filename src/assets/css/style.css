@@ -152,6 +152,7 @@ img{
 .sign-in-google button{
     display: flex !important;
     justify-content: center;
+    align-items: center;
     display: inline-block;
     border: 1px solid #E0E0E0;
     color: var(--lightblack);
@@ -163,15 +164,12 @@ img{
     border-radius: 8px;
     text-transform: none;
     font-weight: 600;
-    /* font-size: 16px; */
     margin-top: var(--mb-3);
     margin-left: 0;
-    /* line-height: 16px; */
-
 }
 
 .sign-in-google img{
-    margin-top: -3px;
+    margin-top: 0px;
 }
 
 .sign-in-google button:hover{
@@ -235,6 +233,11 @@ label{
     display:grid;
     grid-template-columns: 8% 85%;
     padding: 0 .4rem;
+}
+.Name__boxShadow{
+    border: none;
+    background: var(--white);
+    box-shadow: 0px 0px 14px rgba(244, 105, 76, 0.15);
 }
 
 .input-field:focus-within{
@@ -439,14 +442,20 @@ form .sign-up:hover{
 }
 
 .navbar-menu .signin-button{
-    /* background-color: var(--purple); */
     background-color: var(--dark-pink);
     padding: 10px 40px 10px 40px;
     border-radius: 15px;
 }
 
+.navbar-menu .signin-button:hover{
+    color: var(--white);
+    font-size: 1.15rem;
+    transform: scaleX(1.1);
+}
+
 .navbar-menu a:hover{
    color: var(--purple);
+   
 }
 
 .icon{
@@ -606,7 +615,7 @@ form .sign-up:hover{
 
 input[type="submit"]{
     left: -5px;
-    top: 2px;
+    top: 1px;
     border-radius: 0 13px 13px 0px;
     width: 120px;
     height: 60px;
@@ -861,6 +870,12 @@ input[type="submit"]{
         /* padding-left: 10px; */
         font-size: var(--normal-font-size);
         /* margin-right: 50px; */
+    }
+
+    .Name__boxShadow{
+        border: none;
+        background: var(--white);
+        box-shadow: 0px 0px 14px rgba(244, 105, 76, 0.15);
     }
 
     .input-field img{

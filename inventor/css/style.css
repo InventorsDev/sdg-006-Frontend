@@ -237,6 +237,13 @@ label{
     padding: 0 .4rem;
 }
 
+.Name__boxShadow{
+    border: none;
+    background: var(--white);
+    box-shadow: 0px 0px 14px rgba(244, 105, 76, 0.15);
+}
+
+
 .input-field:focus-within{
     background: #FFFFFF;
     border: 1px solid #6C5DD3;

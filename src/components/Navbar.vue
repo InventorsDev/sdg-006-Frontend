@@ -17,7 +17,7 @@
                     <a href="">English</a>
                     <a href="">Become an Expert</a>
                     <router-link to="/register">Sign Up</router-link>
-                    <a href="" class="signin-button">Sign In</a>
+                    <router-link to="/signin"  class="signin-button">Sign In</router-link>
                 </div>
             </div>
         </nav>
@@ -31,5 +31,5 @@
     }
 </script>
 
-<style >
+<style>
 </style>
