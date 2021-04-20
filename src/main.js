@@ -4,6 +4,7 @@ import './assets/css/bootstrap.min.css'
 import './assets/css/mdb.min.css'
 import './assets/css/style.css'
 import './assets/css/fontawesome-free-5.15.1-web/css/all.min.css'
+// import './assets/css/dashstyle.css'
 
 import router from './router'
 
