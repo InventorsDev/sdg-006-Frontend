@@ -1,14 +1,16 @@
 <template>
-  <Banner/>
+  <div>
+    <router-view/>
+  </div>
 </template>
 
 <script>
-import Banner from '../src/screens/banner.vue'
+import Homepage from './screens/Homepage.vue'
 
 export default {
   name: 'App',
   components: {
-    Banner
+    Homepage
   }
 }
 </script>
