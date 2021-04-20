@@ -657,13 +657,13 @@ input[type="submit"]{
 
 /* Home Page 2 */
 /*============ Banner ==============*/
-/* .bannerr{
-    background-image: url(../img/BAckgroundsArtboard\ 1.jpg);
+.banner{
+    background-image: url(../img/bgPink.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    max-width: 100%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -685,7 +685,7 @@ input[type="submit"]{
     padding: 0 .4rem;
 }
 
-.bannerr h2{
+.banner h2{
     color: var(--white);
     line-height: 56px;
     font-weight: bold;
@@ -693,7 +693,7 @@ input[type="submit"]{
     letter-spacing: 1px;
 }
 
-.search-field:focus-within{
+/* .search-field:focus-within{
     background: var(--white);
     border: 1px solid var(--purple);
     box-shadow: 0px 0px 14px rgba(244, 105, 76, 0.15);
@@ -726,20 +726,20 @@ input[type="submit"]{
     font-size: 20px;
     transition: .5s;
     margin-top: var(--mb-4);
-}
+} */
 
-.bannerr form{
+.banner form{
     position: relative;
 }
 
-.bannerr form img{
+.banner form img{
     position: absolute;
     left: 30px;
     top: 50px;
     z-index: 5;
 }
 
-.bannerr input[type="text"]{
+.banner input[type="text"]{
     position: relative;
     background: var(--white);
     width: 550px;
@@ -769,7 +769,7 @@ input[type="submit"]{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.bannerr input::placeholder{
+.banner input::placeholder{
     color: #AEAEAE;
     font-size: 18px;
 }
@@ -802,7 +802,7 @@ input[type="submit"]{
 
 .popular-list ul{
    display: inline-flex;
-} */
+}
 
 /* ==================================== */
 @media screen and (max-width: 375px){
