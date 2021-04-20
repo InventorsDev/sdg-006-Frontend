@@ -180,9 +180,6 @@ input[type="submit"]{
     justify-content: space-between;
 }
 
-.sideBar{
-    /* background: red; */
-}
 
 .sideBar__left{
     width: 20%;

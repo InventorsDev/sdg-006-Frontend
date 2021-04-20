@@ -657,7 +657,7 @@ input[type="submit"]{
 
 /* Home Page 2 */
 /*============ Banner ==============*/
-.banner{
+.banner1{
     background-image: url(../img/bgPink.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -685,7 +685,7 @@ input[type="submit"]{
     padding: 0 .4rem;
 }
 
-.banner h2{
+.banner1 h2{
     color: var(--white);
     line-height: 56px;
     font-weight: bold;
@@ -728,18 +728,18 @@ input[type="submit"]{
     margin-top: var(--mb-4);
 } */
 
-.banner form{
+.banner1 form{
     position: relative;
 }
 
-.banner form img{
+.banner1 form img{
     position: absolute;
     left: 30px;
     top: 50px;
     z-index: 5;
 }
 
-.banner input[type="text"]{
+.banner1 input[type="text"]{
     position: relative;
     background: var(--white);
     width: 550px;
@@ -769,7 +769,7 @@ input[type="submit"]{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.banner input::placeholder{
+.banner1 input::placeholder{
     color: #AEAEAE;
     font-size: 18px;
 }
