@@ -5,16 +5,16 @@
 </template>
 
 <script>
-import Homepage from './screens/Homepage.vue'
+import Signin from './screens/auth/signin.vue'
 
 export default {
   name: 'App',
   components: {
-    Homepage
+    Signin
   }
 }
 </script>
 
 <style>
-  @import './assets/css/style.css';
+  /* @import './assets/css/style.css'; */
 </style>

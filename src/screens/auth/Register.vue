@@ -27,13 +27,13 @@
 
         <form action="" class="signin-form">
             <label for="">First Name</label>
-            <div class="input-field firstName__boxShadow">
-            <img src="assets/img/Profile.png" alt="" class="fa-envelope">
+            <div class="input-field Name__boxShadow">
+            <img src="../../assets/img/user.png" alt="" class="fa-envelope">
             <input type="text" placeholder="First Name" class="">
         </div>
         <label for="">Last Name</label>
-            <div class="input-field  lastName__boxShadow">
-            <img src="assets/img/Profile.png" alt="" class="fa-envelope">
+            <div class="input-field  Name__boxShadow">
+            <img src="../../assets/img/user.png" alt="" class="fa-envelope">
             <input type="text" placeholder="Last Name" class="">
             </div>
             <label for="">Email address</label>
