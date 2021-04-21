@@ -22,7 +22,6 @@
             </div>
         </nav>
     </div>
-    
 </template>
 
 <script>
@@ -30,6 +29,6 @@
         name: 'Navbar',
     }
 </script>
-
 <style>
+
 </style>
