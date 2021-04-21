@@ -15,8 +15,8 @@
                     <a href="" class="active">Dashboard</a>
                     <a href="">Doctors</a>
                     <a href="">Appointments</a>
-                    <a href=""><img src="img/Chat.png" alt=""></a>
-                    <a href="" class=""><img src="img/call-center-agent 1.png" alt=""></a>
+                    <a href=""><img src="../assets/img/dashboard/Chat.png" alt=""></a>
+                    <a href="" class=""><img src="../assets/img/dashboard/call.png" alt=""></a>
                 </div>
             </div>
         </nav>

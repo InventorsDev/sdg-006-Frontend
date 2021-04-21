@@ -3,6 +3,7 @@ import Register from '../screens/auth/Register.vue';
 import Signin from '../screens/auth/signin.vue';
 import Forget from '../screens/auth/forget-pass.vue';
 import DashTwo from '../screens/DashTwo.vue';
+import DashOne from '../screens/DashOne.vue';
 
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -14,8 +15,8 @@ const routes = [
     // },
     {
         path: '/',
-        name: 'DashTwo',
-        component: DashTwo
+        name: 'DashOne',
+        component: DashOne
     },
     {
         path: '/register',
