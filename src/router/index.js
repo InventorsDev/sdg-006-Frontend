@@ -1,6 +1,6 @@
 import Homepage from '../screens/Homepage.vue';
 import Register from '../screens/auth/Register.vue';
-import Signin from '../screens/auth/signin.vue';
+import Login from '../screens/auth/Login.vue';
 import Forget from '../screens/auth/forget-pass.vue';
 
 import { createRouter, createWebHistory } from 'vue-router'
@@ -17,13 +17,13 @@ const routes = [
         component: Register
     },
     {
-        path: '/signin',
-        name: 'Signin',
-        component: Signin
+        path: '/login',
+        name: 'Login',
+        component: Login
     },
     {
-        path: '/forget',
-        name: 'Forget',
+        path: '/forget-password',
+        name: 'ForgetPassword',
         component: Forget
     }
 ]

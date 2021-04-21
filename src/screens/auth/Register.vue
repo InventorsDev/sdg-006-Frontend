@@ -60,7 +60,7 @@
                 <label for="remember_me">Remember me</label>
             </div>
             <div>
-                <h3>Forget Password?</h3>
+                <router-link to="/forget-password"><h3>Forget Password?</h3></router-link>
             </div>
             </div>
             <button class="btn sign-up">Sign Up</button>
@@ -68,7 +68,7 @@
         </form>
 
         <div class="account">
-            <p> <span>Not registered yet?</span>Create an Account</p>
+            <p> <span>Already registered?</span><router-link to="/login">Sign in here</router-link></p>
         </div>
 
         <div class="terms">

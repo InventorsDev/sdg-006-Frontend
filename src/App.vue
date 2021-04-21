@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Signin from './screens/auth/signin.vue'
+import Signin from './screens/auth/Login.vue'
 
 export default {
   name: 'App',

@@ -39,7 +39,7 @@
                         <label for="remember_me">Remember me</label>
                     </div>
                     <div>
-                        <router-link to="/forget"><h3>Forget Password?</h3></router-link>
+                        <router-link to="/forget-password"><h3>Forget Password?</h3></router-link>
                         <!-- Forget Password? -->
                     </div>
                     </div>
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="account">
-                    <p> <span>Not registered yet?</span>Create an Account</p>
+                    <p> <span>Not registered yet?</span><router-link to="/register">Create an Account</router-link></p>
                 </div>
 
                 <div class="terms">
@@ -79,7 +79,7 @@
 <script>
 
 export default {
-  name: 'Signin',
+  name: 'Login',
 }
 </script>
 

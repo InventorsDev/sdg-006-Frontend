@@ -17,6 +17,7 @@
                     <ul>
                         <li><a href="#">Pediatricians</a></li>
                         <li><a href="#">Cardiologists</a></li>
+                        <li><a href="#">{{ name }}</a></li>
                         <li><a href="#">Psychiatrists</a></li>
                     </ul>
                 </div>
@@ -36,6 +37,11 @@ export default {
   name: 'Homepage',
   components:{
       Navbar
+  },
+  computed : {
+      name() {
+          return this.$store.state.name;
+      }
   }
 }
 </script>
