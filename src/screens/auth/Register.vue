@@ -55,13 +55,13 @@
             </div>
 
             <div class="forget-password">
-            <div class="check">
-                <input type="checkbox" name="" id="remember_me">
-                <label for="remember_me">Remember me</label>
-            </div>
-            <div>
-                <h3>Forget Password?</h3>
-            </div>
+                <div class="check">
+                    <input type="checkbox" name="" id="remember_me">
+                    <label for="remember_me">Remember me</label>
+                </div>
+                <div>
+                    <h3>Forget Password?</h3>
+                </div>
             </div>
             <button class="btn sign-up">Sign Up</button>
 

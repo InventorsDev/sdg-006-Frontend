@@ -12,9 +12,9 @@
                     </form>
                 </div>
                 <div class="dash__navbar__menu">
-                    <a href="" class="active">Dashboard</a>
-                    <a href="">Doctors</a>
-                    <a href="">Appointments</a>
+                    <a href="#" class="active">Dashboard</a>
+                    <a href="#">Doctors</a>
+                    <a href="#">Appointments</a>
                     <a href=""><img src="../assets/img/dashboard/Chat.png" alt=""></a>
                     <a href="" class=""><img src="../assets/img/dashboard/call.png" alt=""></a>
                 </div>

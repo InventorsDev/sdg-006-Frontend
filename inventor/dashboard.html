@@ -1,48 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Double Navigation Bar</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/dashstyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <!-- <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon"> -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="css/fontawesome-free-5.15.1-web/css/all.min.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  </style>
 </head>
 <body>
-<header class="navbar-page" style="z-index: 1000;">
-    <nav>
-        <div class="inner-width">
+    <nav class="dash__navbar">
+        <div class="dash-inner-width">
+            <!-- <img src="img/dashboard/sort.png" alt=""> -->
             <a href="#" class="logo"></a>
-            <div class="box">
+            <div class="dash__box">
                 <form action="">
-                    <img src="img/Group 69.png" alt="" class="fa-envelope">
+                    <img src="img/search.png" alt="" class="">
                     <input type="text" placeholder="Search">
-                    <input type="submit" name="" value="Search">
+                    <input type="submit" name="" value="Search" class="dashII__seaarch">
                 </form>
             </div>
-            <div class="navbar-menu" >
+            <div class="dash__navbar__menu">
                 <a href="" class="active">Dashboard</a>
                 <a href="">Doctors</a>
                 <a href="">Appointments</a>
-                <a href=""><img src="img/Chat.png" alt=""></a>
-                <a href="" class=""><img src="img/call-center-agent 1.png" alt=""></a>
+                <a href=""><img src="img/dashboard/Chat.png" alt=""></a>
+                <a href="" class=""><img src="img/dashboard/call.png" alt=""></a>
             </div>
         </div>
     </nav>
     <div class="bottom_nav">
         <ul>
-          <li><a href="#">Pediatricians</a></li>
-          <li><a href="#">Cardiologists</a></li>
-          <li><a href="#">Psychiatrists</a></li>
-          <li><a href="#">Anesthesiologists</a></li>
-          <li><a href="#">Internists</a></li>
-          <li><a href="#">Geriatric</a></li>
-          <li><a href="#">Dermatologist </a></li>
-          <li><a href="#">Geneticist</a></li>
+        <li><a href="#">Pediatricians</a></li>
+        <li><a href="#">Cardiologists</a></li>
+        <li><a href="#">Psychiatrists</a></li>
+        <li><a href="#">Anesthesiologists</a></li>
+        <li><a href="#">Internists</a></li>
+        <li><a href="#">Geriatric</a></li>
+        <li><a href="#">Dermatologist </a></li>
+        <li><a href="#">Geneticist</a></li>
         </ul>
     </div>
-</header>
 
 <!-- ============== Side bar =========== -->
+<div class="patient__name">
+    <h1>Hello<span>, Opeoluwa!</span></h1>
+</div>
 
+<div class="sideBarWrapper">
+    <div class="sideBar sideBar__left">
+        <div class="">
+            <img src="img/dashboard/1.png" alt="">
+            <div class="new__appointment">
+                <div class="add">
+                    <img src="img/dashboard/+.png" alt="">
+                </div> 
+                <h3>New<br/>Appointment</h3>
+            </div>
+        </div>
+    </div>
+    <div class="sideBar sideBar__center">
+        <div>
+            <h2 class="mb-4">Upcoming Activities</h2>
+            <div class="expert">
+                <div class="expert__details offline mr-4">
+                    <div class="doc doc__title">
+                        <img src="img/dashboard/expert2.png" alt="" class="mr-3">
+                        <div class="">
+                            <h3>Dr. Opeyemi Ajayi</h3>
+                            <p>Heart Surgeon, Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="doc ">
+                        <h3>Surgeon</h3>
+                        <p>Heart Surgeon</p>
+                    </div>
+                    <div class="doc doc__date">
+                        <div class="date">
+                            <p>Date</p>
+                            <h3>3 April 2021</h3>
+                        </div>
+                        <div class="time">
+                            <p>Time</p>
+                            <h3>10:00 AM</h3>
+                        </div>
+                    </div>
+                    <div class="doc doc__action">
+                        <div class="appointment">
+                            <button class="btn btn-primary">Appointment</button> 
+                        </div>
+                        <div class="chat">
+                            <img src="img/dashboard/Chat.png" alt="">
+                        </div>
+                        <div class="chat">
+                            <img src="img/dashboard/Video.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="expert__details">
+                    <div class="doc doc__title">
+                        <img src="img/dashboard/expert1.png" alt="" class="mr-3">
+                        <div class="">
+                            <h3>Dr. Esther Omobolale</h3>
+                            <p>Heart Surgeon, Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="doc ">
+                        <h3>Medicine</h3>
+                        <p>Specialist</p>
+                    </div>
+                    <div class="doc doc__date">
+                        <div class="date">
+                            <p>Date</p>
+                            <h3>4 April 2021</h3>
+                        </div>
+                        <div class="time">
+                            <p>Time</p>
+                            <h3>10:00 AM</h3>
+                        </div>
+                    </div>
+                    <div class="doc doc__action">
+                        <div class="appointment">
+                            <button class="btn btn-primary">Appointment</button> 
+                        </div>
+                        <div class="chat">
+                            <img src="img/dashboard/Chat.png" alt="">
+                        </div>
+                        <div class="chat">
+                            <img src="img/dashboard/Video.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load__expert mb-4 mt-4 pr-1">
+                Older >>
+            </div>
+
+            <div class="prescribe">
+                <p class="mb-4">Prescription</p>
+                <div class="p__container">
+                    <div class="p__wrapper p__new">
+                        <div class="pre p__prescribed">
+                            <h3>Paracetamol</h3>
+                            <p>Last prescribed 04 April, 2020</p>
+                        </div>
+                        <div class="pre p__active">
+                            <h3 class="mr-2">04</h3>
+                            <p>Active Prescription</p>
+                        </div>
+            
+                        <div class="pre p__refuel">
+                            <h3 class="mr-2">0</h3>
+                            <p>Refuel Request</p>
+                        </div>
+                    </div>
+                    <div class="p__wrapper p__old">
+                        <div class="pre p__prescribed">
+                            <h3>Paracetamol</h3>
+                            <p>Last prescribed 04 April, 2020</p>
+                        </div>
+                        <div class="pre p__active">
+                            <h3 class="mr-2">04</h3>
+                            <p>Active Prescription</p>
+                        </div>
+            
+                        <div class="pre p__refuel">
+                            <h3 class="mr-2">0</h3>
+                            <p>Refuel Request</p>
+                        </div>
+                    </div>
+                    <div class="p__wrapper p__old">
+                        <div class="pre p__prescribed">
+                            <h3>Paracetamol</h3>
+                            <p>Last prescribed 04 April, 2020</p>
+                        </div>
+                        <div class="pre p__active">
+                            <h3 class="mr-2">04</h3>
+                            <p>Active Prescription</p>
+                        </div>
+            
+                        <div class="pre p__refuel">
+                            <h3 class="mr-2">0</h3>
+                            <p>Refuel Request</p>
+                        </div>
+                    </div>
+                    <div class="p__wrapper p__old">
+                        <div class="pre p__prescribed">
+                            <h3>Paracetamol</h3>
+                            <p>Last prescribed 04 April, 2020</p>
+                        </div>
+                        <div class="pre p__active">
+                            <h3 class="mr-2">04</h3>
+                            <p>Active Prescription</p>
+                        </div>
+            
+                        <div class="pre p__refuel">
+                            <h3 class="mr-2">0</h3>
+                            <p>Refuel Request</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sideBar sideBar__right">
+        <div class="">
+            <div class="notifications_container">
+                <div class="notification_picture mr-2">
+                    <img src="img/dashboard/expert1.png" alt="">
+                </div>
+                <div class="notify__box notification_alarm">
+                    <img src="img/dashboard/Notification.png" alt="">
+                    <img src="img/dashboard/nofify.png" alt="" class="nofity_me">
+                </div>
+            </div>
+            <p>Active Activities</p>
+            <div class="calendar">              
+                <div class="header">
+                    <a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><img src="img/dashboard/arrow_left.png" alt=""></a>
+                    <div class="text" data-render="month-year"></div>
+                    <a data-action="next-month" href="javascript:void(0)" title="Next Month"><img src="img/dashboard/arrow_right.png" alt=""></a>
+                </div>
+                <div class="months" data-flow="left">
+                    <div class="month month-a">
+                        <div class="render render-a"></div>
+                    </div>
+                    <div class="month month-b">
+                        <div class="render render-b"></div>
+                    </div>
+                </div>
+                <div class="calender__action">
+                    <p class="cancel" style="font-size: 14px; font-weight: 700; color: #333333;">Cancel</p>
+                    <div class="done" style="display: flex; justify-content: center; align-items: center; width: 100px; height: 40px; background: #6C5DD3; border-radius: 5px; color: white;font-size: 14px;">
+                        Done
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
