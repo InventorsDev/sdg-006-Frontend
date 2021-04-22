@@ -67,11 +67,6 @@
 
             </div>
                 <!-- =============== End Form =============== -->
-            
-            <div class="form-image">
-            <!-- <div class="overlay">
-            </div> -->
-            </div>
         </div>
     </div>
 </template>

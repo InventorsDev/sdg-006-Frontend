@@ -74,7 +74,7 @@ body{
     /* background: #E5E5E5; */
     /* margin: var(--mb-2) 0 0 0 ; */
 }
-h1,h2,h3,p{
+h1,h2,h3{
     margin: 0;
 }
 
@@ -152,7 +152,6 @@ img{
 .sign-in-google button{
     display: flex !important;
     justify-content: center;
-    align-items: center;
     display: inline-block;
     border: 1px solid #E0E0E0;
     color: var(--lightblack);
@@ -164,8 +163,10 @@ img{
     border-radius: 8px;
     text-transform: none;
     font-weight: 600;
-    margin-top: var(--mb-3);
+    /* font-size: 16px; */
+    margin-top: var(--mb-3) !important;
     margin-left: 0;
+    /* line-height: 16px; */
 }
 
 .sign-in-google img{
@@ -301,7 +302,8 @@ form .sign-up{
     height: 45px;
     border-radius: 8px;
     text-transform: none;
-    margin-top: var(--mb-3);
+    margin-left: 0;
+    margin-top: var(--mb-3) !important;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -349,7 +351,6 @@ form .sign-up:hover{
 
 .terms .privacy{
     font-size: 14px;
-    /* line-height: 150%; */
     letter-spacing: -0.01em;
     color: var(--darkgrey);
 }
@@ -664,10 +665,33 @@ input[type="submit"]{
 }
 
 /* ==================================== */
-@media screen and (max-width: 375px){
+@media screen and (max-width: 768px){
     .wave{
         display: none;
     }
+
+    .container{
+        margin-top: 1.5rem;
+        position: relative;
+        height: 100%;
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* grid-template-columns: repeat(2, 1fr); */
+        /* grid-gap: 7rem;
+        padding: 0 2rem; */
+    }
+
+    .form-container{
+        
+    }
+}
+@media screen and (max-width: 414px){
+    .wave{
+        display: none;
+    }
+
     /* Mobile View For the Sign in Page */
     .container{
         grid-template-columns: unset;
@@ -752,11 +776,11 @@ input[type="submit"]{
         justify-content: space-between;
     }
     
-    form .sign-up{
+    /* form .sign-up{
         width: 100%;
         margin-top: var(--mb-3);
         margin-left: 0;
-    }
+    } */
 
     .divider{
         text-align: center;
@@ -854,14 +878,32 @@ input[type="submit"]{
     color: #7E7E7E;
     font-family: sans-serif;
     font-size: 18px;
-    font-weight:400;
+    font-weight:500;
     margin-left: 1rem;
     transition: .2s linear;
-    /* padding: 8px 10px; */
 }
 
 .dash__navbar__menu a:hover{
    color: var(--purple);
+}
+
+.dash__navbar__menu a:hover, a:focus, a:active{
+    position: relative;
+    color: var(--purple);
+    font-weight: 500;
+    font-size: 18.2px;
+}
+
+.dash__navbar__menu a:hover::after, a:focus::after, a:active::after{
+    position: absolute;
+    content: "";
+    width: 70%;
+    height:2px;
+    left: 0;
+    top: 1.8rem;
+    transform: translateX(20%);
+    background: var(--purple);
+
 }
 
 .dash__box input{
@@ -1235,6 +1277,8 @@ input[type="submit"]{
     font-weight: 400;
     line-height: 16px;
     color: #7E7E7E;
+    margin: 0;
+    padding: 0;
 }
 .doc h3{
     color: #303030;
