@@ -9,6 +9,11 @@ import 'es6-promise/auto'
 import axios from 'axios';
 // import './assets/css/dashstyle.css'
 
+import './assets/js/jquery.min.js'
+import './assets/js/popper.min.js'
+import './assets/js/bootstrap.min.js'
+import './assets/js/calender.js'
+
 import router from './router'
 axios.defaults.baseURL = 'http://medhouse.herokuapp.com/api/v1'
 axios.defaults.headers.common['medhouse'] = 'medhouse'

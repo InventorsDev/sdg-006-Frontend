@@ -4,6 +4,8 @@ import Login from '../screens/auth/Login.vue';
 import Forget from '../screens/auth/forget-pass.vue';
 
 // import Dashboard from '../screens/dashboard/Dashboard.vue';
+// import DashTwo from '../screens/DashTwo.vue';
+// import DashOne from '../screens/DashOne.vue';
 
 import { createRouter, createWebHistory } from 'vue-router'
 

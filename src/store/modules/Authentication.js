@@ -60,7 +60,7 @@ const actions = {
             })
           .catch(error => {
                 commit(types.AUTH_STATE_MUTATE)
-                console.log(error.reponse.data)
+                console.log(error.reponse)
             });
 
     },
