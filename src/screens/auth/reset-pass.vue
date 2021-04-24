@@ -1,50 +1,30 @@
 <template>
     <div>
-        <!-- ============ Right Side Image ============== -->
-        <img src="../../assets/img/sigin.png" alt="" class="wave">
-        <img src="../../assets/img/doctor.png" alt="" class="wave">
-        <!-- ============== End of Right side Image =============== -->
+       <nav class="reset__navbar">
+            <div class="reset__inner__width">
+            <a href="#" class="reset__logo"></a>
+            </div>
+        </nav>
 
-        <!-- ========
-        === Form  =================-->
-        <div class="container">
-            <div class="form-container">
-                <div class="banner">
-                    <img src="../../assets/img/logo.png" alt="" class="img-fluid logo">
-                    <h1>Reset Password</h1>
-                    <p>Please enter your new password and make sure your confirm this password, must be same.</p>
-                </div>
-
-                <form action="" class="signin-form">
-                    <label for="">New Password</label>
-                    <div class="input-field">
-                        <img src="../../assets/img/Lock.png" alt="" class="fa-lock">
-                        <input type="text" placeholder="Enter your password">
-                    </div>
-
-                    <label for="">Confirm Password</label>
-                    <div class="input-field">
-                        <img src="../../assets/img/Lock.png" alt="" class="fa-lock">
-                        <input type="text" placeholder="Confirm your password">
-                    </div>
-                    <button class="btn sign-up" >Submit</button>
-                </form>
-
-                <div class="terms">
-                    <div class="copy">
-                    &copy; 2021 SDG ALL rights reserved.
-                    </div>
-                    <div class="privacy">
-                    Terms of Service. Privacy Policy
+        <div class="reset__banner">
+            <div class="container reset__container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <h1>Reset Your Password</h1>
+                        </div>
+                        <div class="reset__prescription">
+                            <p>
+                                Forgot your password? Don't panic. we got you.
+                                click on the button below to set a new one
+                            </p>
+                        </div>
+                        <a href="#" class="btn btn-reset">Reset Password</a>
                     </div>
                 </div>
             </div>
-            <!-- =============== End Form =============== -->
-
-            <div class="form-image">
-            <!-- <div class="overlay"> -->
-                <!-- <img src="img/shutterstock_1720389688 1.png" alt=""> -->
-            <!-- </div> -->
+            <div>
+                <p class="reset__thank">Thank you, MedHouse</p>
             </div>
         </div>
     </div>
@@ -56,5 +36,158 @@
     }
 </script>
 
-<style>
+<style scoped>
+/* ========== Reset Password Style =========== */
+
+.reset__navbar{
+    position: fixed !important;
+    background-color: transparent;
+    width: 100%;
+    padding: 20px 0;
+    top:0;
+    z-index: 999;
+    transition: .3s linear;
+}
+
+.reset__inner__width{
+    max-width: 1250px;
+    margin: auto 5rem;
+    padding-top:20px;
+}
+
+
+.reset__navbar .reset__inner__width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reset__inner__width > .reset__logo{
+    text-align: center;
+    width: 190px;
+    height: 43px;
+    background-image: url('../../assets/img/resetlogo.png');
+}
+
+
+.reset__banner{
+    background-image: url(../../assets/img/resetBanner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.container > .row{
+    margin: 0 !important;
+}
+
+.reset__banner>.reset__container{
+    padding: 0 0 0 5rem !important;
+    margin: unset !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.reset__container h1 {
+    color: var(--white);
+    font-weight: var(--font-semi);
+    font-size: 36px;
+    margin-bottom: var(--mb-2);
+}
+
+.reset__prescription>p{
+    margin-bottom: var(--mb-4);
+    max-width: 70%;
+    color: var(--white);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.reset__container .btn-reset{
+    max-width:20rem;
+    padding: 18px 56px;
+    margin: var(--mb-2) 0px !important;
+    text-transform: capitalize;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--white);
+    background: transparent !important;
+    border: 3px solid var(--white);
+    border-radius: 10px;
+    position: unset import !important;
+}
+
+.reset__banner .reset__thank{
+    font-weight: 400;
+    font-weight: 18px;
+    color: var(--white);
+    position: absolute;
+    display:block;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px){
+    .reset__prescription>p{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .reset__inner__width{
+        max-width: 1250px;
+        margin: auto 3rem;
+        padding-top:20px;
+    }
+
+    .reset__banner>.reset__container{
+        padding: 0 3rem 0 3rem !important;
+    }
+
+    .reset__container .col-md-12{
+        text-align: center;
+    }
+
+    .reset__container h1{
+        font-size: 26px;
+    }
+    .reset__prescription>p{
+        max-width: 100%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .reset__inner__width{
+        max-width: 1250px;
+        margin: auto 3rem;
+        padding-top:20px;
+    }
+
+    .reset__banner>.reset__container{
+        padding: 0 3rem 0 3rem !important;
+    }
+
+    .reset__container .col-md-12{
+        text-align: center;
+    }
+
+    .reset__container h1{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .reset__prescription>p{
+        max-width: 100%;
+        font-size: 15px;
+    }
+}
 </style>
