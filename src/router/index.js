@@ -3,7 +3,23 @@ import Register from '../screens/auth/Register.vue';
 import Login from '../screens/auth/Login.vue';
 import Forget from '../screens/auth/forget-pass.vue';
 
+// import Dashboard from '../screens/dashboard/Dashboard.vue';
+
 import { createRouter, createWebHistory } from 'vue-router'
+
+const Dashboard = () => import('../screens/dashboard/Dashboard.vue');  //lazy loading
+const medhouse_patients = (to, from, next) => {
+    const loggedIn = localStorage.getItem('token')
+    if(!loggedIn) next({name:'Login'})
+    else next()
+}
+
+const medhouse_guest = (to, from, next) => {
+    const loggedIn = localStorage.getItem('token')
+    if(loggedIn) next({name:'Dashboard'})
+    else next()
+}
+
 
 const routes = [
     {
@@ -14,18 +30,51 @@ const routes = [
     {
         path: '/register',
         name: 'Register',
-        component: Register
+        component: Register,
+        beforeEnter:medhouse_guest
     },
     {
         path: '/login',
         name: 'Login',
-        component: Login
+        component: Login,
+        beforeEnter:medhouse_guest
     },
     {
         path: '/forget-password',
         name: 'ForgetPassword',
-        component: Forget
-    }
+        component: Forget,
+        beforeEnter:medhouse_guest
+    },
+    {
+        path: '/dashboard',
+        name: 'Dashboard',
+        component: Dashboard,
+        beforeEnter : medhouse_patients
+    },
+    // {
+    //     path: '/doctors',
+    //     name: 'doctors',
+    //     component: Doctor,
+    //     children : [
+    //         {
+    //             path : ':id/details'
+    //         },
+    //     ]
+    // },
+    // {
+    //     path: '/appointments',
+    //     name: 'appointments',
+    //     component: Appointment,
+    //     children : [
+    //         {
+    //             path : ':id'
+    //         },
+    //     ]
+    // },
+    {
+        path: '/:catchAll(.*)',
+        redirect : "/",
+    },
 ]
 
 const router = createRouter({ history: createWebHistory(), routes })

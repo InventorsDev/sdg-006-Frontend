@@ -20,17 +20,17 @@
                     <p class="divider">or</p>
                 </div>
 
-                <form action="" class="signin-form">
+                <form class="signin-form">
                     <label for="">Email address</label>
                     <div class="input-field">
-                    <img src="../../assets/img/EnvelopeSimple.png" alt="" class="">
-                    <input type="text" placeholder="Email Address">
+                    <img src="../../assets/img/EnvelopeSimple.png" alt="" class="" >
+                    <input type="text" placeholder="Email Address" v-model="authData.email">
                     </div>
 
                     <label for="">Password</label>
                     <div class="input-field">
                     <img src="../../assets/img/Lock.png" alt="" class="">
-                    <input type="text" placeholder="Enter your password">
+                    <input type="text" placeholder="Enter your password" v-model="authData.password">
                     </div>
 
                     <div class="forget-password">
@@ -40,12 +40,13 @@
                     </div>
                     <div>
                         <router-link to="/forget-password"><h3>Forget Password?</h3></router-link>
+                        <router-link to="/"><h3>Home</h3></router-link>
                         <!-- Forget Password? -->
                     </div>
                     </div>
-                    <button class="btn sign-up">Sign in</button>
+                    <button class="btn sign-up" @click.prevent="handleLogin()" :disabled = "getStatus">Sign in</button>
                 </form>
-
+                
                 <p class="mobile__divider">or</p>
 
                 <div class="sign-in-google mobile-sign-in-google">
@@ -77,9 +78,33 @@
 </template>
 
 <script>
+import * as types from '../../store/types'
+import { mapGetters } from 'vuex';
 
 export default {
   name: 'Login',
+  data () {
+        return {
+            authData : {
+                email: "",
+                password: "",
+            }
+        }
+    },
+    computed : {
+        ...mapGetters({
+            getStatus : types.AUTH_STATE
+        })
+    },
+    methods : {
+        handleLogin() {
+            const formData = {
+                email: this.authData.email,
+                password: this.authData.password,
+            }
+            this.$store.dispatch(types.LOGIN_ACTION , formData);
+        }
+    }
 }
 </script>
 

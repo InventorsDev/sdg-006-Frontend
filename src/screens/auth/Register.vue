@@ -25,33 +25,33 @@
             <p class="divider">or</p>
         </div>
 
-        <form action="" class="signin-form">
+        <form class="signin-form">
             <label for="">First Name</label>
             <div class="input-field Name__boxShadow">
-            <img src="../../assets/img/user.png" alt="" class="fa-envelope">
-            <input type="text" placeholder="First Name" class="">
-        </div>
-        <label for="">Last Name</label>
+                <img src="../../assets/img/user.png" alt="" class="fa-envelope">
+                <input type="text" placeholder="First Name" class="" v-model="authData.firstname">
+            </div>
+            <label for="">Last Name</label>
             <div class="input-field  Name__boxShadow">
-            <img src="../../assets/img/user.png" alt="" class="fa-envelope">
-            <input type="text" placeholder="Last Name" class="">
+                <img src="../../assets/img/user.png" alt="" class="fa-envelope">
+                <input type="text" placeholder="Last Name" class="" v-model="authData.lastname">
             </div>
             <label for="">Email address</label>
             <div class="input-field">
-            <img src="../../assets/img/EnvelopeSimple.png" alt="" class="fa-envelope">
-            <input type="text" placeholder="Email Address">
+                <img src="../../assets/img/EnvelopeSimple.png" alt="" class="fa-envelope">
+                <input type="text" placeholder="Email Address" v-model="authData.email">
             </div>
 
             <label for="">Password</label>
             <div class="input-field">
-            <img src="../../assets/img/Lock.png" alt="" class="fa-lock">
-            <input type="text" placeholder="Enter your password">
+                <img src="../../assets/img/Lock.png" alt="" class="fa-lock">
+                <input type="text" placeholder="Enter your password" v-model="authData.password">
             </div>
 
-            <label for="">Confirm Password</label>
+            <label for="">Phone Number</label>
             <div class="input-field">
-            <img src="../../assets/img/Lock.png" alt="" class="fa-lock">
-            <input type="text" placeholder="Confirm your password">
+                <img src="../../assets/img/Lock.png" alt="" class="fa-lock">
+                <input type="text" placeholder="Confirm your password" v-model="authData.phone_number">
             </div>
 
             <div class="forget-password">
@@ -63,7 +63,7 @@
                 <router-link to="/forget-password"><h3>Forget Password?</h3></router-link>
             </div>
             </div>
-            <button class="btn sign-up">Sign Up</button>
+            <button class="btn sign-up" @click.prevent="handleSignUp()" :disabled = "getStatus">Sign Up</button>
 
         </form>
 
@@ -92,8 +92,39 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+import * as types from '../../store/types'
+
 export default {
     name: 'Register',
+    data () {
+        return {
+            authData : {
+                firstname: "",
+                lastname : "",
+                email: "",
+                password: "",
+                phone_number : "",
+            }
+        }
+    },
+    computed : {
+        ...mapGetters({
+            getStatus : types.AUTH_STATE
+        })
+    },
+    methods : {
+        handleSignUp() {
+            const formData = {
+                firstname: this.authData.firstname,
+                lastname : this.authData.lastname,
+                email: this.authData.email,
+                password: this.authData.password,
+                phone_number : this.authData.phone_number,
+            }
+            this.$store.dispatch(types.SIGN_UP_ACTION, formData);
+        }
+    }
 }
 </script>
 
