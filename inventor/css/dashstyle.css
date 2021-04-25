@@ -527,6 +527,14 @@ input[type="submit"]{
     border-bottom: none;
 }
 
+.no__line::-webkit-scrollbar-track{
+    border: 1px solid #E5E5E5;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+}
+
 .dashII__scroll::-webkit-scrollbar-track:hover{
     background: #fff;
 }
