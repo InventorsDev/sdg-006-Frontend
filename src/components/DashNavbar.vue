@@ -1,22 +1,21 @@
 <template>
     <div>
-        <nav class="dash__navbar">
+         <nav class="dash__navbar">
             <div class="dash-inner-width">
-                <!-- <img src="img/dashboard/sort.png" alt=""> -->
                 <a href="#" class="logo"></a>
                 <div class="dash__box">
                     <form action="">
-                        <img src="../assets/img/search.png" alt="" class="">
+                        <img src="../assets/img/dashboard/icons/search.png" alt="" class="fa-envelope">
                         <input type="text" placeholder="Search">
                         <input type="submit" name="" value="Search" class="dashII__seaarch">
                     </form>
                 </div>
                 <div class="dash__navbar__menu">
-                    <a href="#" class="active">Dashboard</a>
-                    <a href="#">Doctors</a>
-                    <a href="#">Appointments</a>
-                    <a href=""><img src="../assets/img/dashboard/Chat.png" alt=""></a>
-                    <a href="" class=""><img src="../assets/img/dashboard/call.png" alt=""></a>
+                    <a href="#" class="nav__link active">Dashboard</a>
+                    <a href="#" class="nav__link">Doctors</a>
+                    <a href="#" class="nav__link">Appointments</a>
+                    <a href=""><img src="../assets/img/dashboard/icons/Chat.png" alt=""></a>
+                    <a href="" class=""><img src="../assets/img/dashboard/icons/call.png" alt=""></a>
                 </div>
             </div>
         </nav>
@@ -36,8 +35,20 @@
 </template>
 
 <script>
+
     export default {
         name: 'DashNavbar',
+        mounted() {
+                const navLink = document.querySelectorAll('.nav__link')
+
+                function linkAction(){
+                    navLink.forEach(n => n.classList.remove('active'))
+                    this.classList.add('active')
+                }
+
+                navLink.forEach(n => n.addEventListener('click', linkAction))
+
+        },
     }
 </script>
 
