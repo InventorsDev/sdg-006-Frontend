@@ -2,6 +2,7 @@ import Homepage from '../screens/Homepage.vue';
 import Register from '../screens/auth/Register.vue';
 import Login from '../screens/auth/Login.vue';
 import Forget from '../screens/auth/forget-pass.vue';
+import ResetPassword from '../screens/auth/ResetPassword';
 
 // import Dashboard from '../screens/dashboard/Dashboard.vue';
 // import DashTwo from '../screens/DashTwo.vue';
@@ -45,6 +46,12 @@ const routes = [
         path: '/forget-password',
         name: 'ForgetPassword',
         component: Forget,
+        beforeEnter:medhouse_guest
+    },
+    {
+        path: '/reset-password/:token',
+        name: 'ResetPassword',
+        component: ResetPassword,
         beforeEnter:medhouse_guest
     },
     {

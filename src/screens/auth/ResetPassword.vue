@@ -21,45 +21,32 @@
                         <img src="../../assets/img/Lock.png" alt="" class="fa-lock">
                         <input type="text" placeholder="Enter your password" v-model="authData.password">
                     </div>
-
                     <label for="">Confirm Password</label>
                     <div class="input-field">
                         <img src="../../assets/img/Lock.png" alt="" class="fa-lock">
-                        <input type="text" placeholder="Confirm your password">
+                        <input type="text" placeholder="Confirm your password" v-model="authData.confirm_password">
                     </div>
                     <button class="btn sign-up" >Submit</button>
                 </form>
-
-                <div class="terms">
-                    <div class="copy">
-                    &copy; 2021 SDG ALL rights reserved.
-                    </div>
-                    <div class="privacy">
-                    Terms of Service. Privacy Policy
-                    </div>
-                </div>
-            </div>
-            <!-- =============== End Form =============== -->
-
-            <div class="form-image">
-            <!-- <div class="overlay"> -->
-                <!-- <img src="img/shutterstock_1720389688 1.png" alt=""> -->
-            <!-- </div> -->
             </div>
         </div>
     </div>
 </template>
 
 <script>
+
+import { mapGetters } from 'vuex'
+import * as types from '../../store/types'
+
     export default {
-        name: 'Reset',
+        name: 'ResetPassword',
         data () {
             return {
                 authData : {
-                    email: "",
+                    email: this.$route.query.email,
                     password : "",
                     confirm_password : "",
-                    token : ""
+                    token : this.$route.params.token,
                 }
             }
         },
@@ -72,12 +59,16 @@
             handleForgotPassword() {
                 const formData = {
                     email: this.authData.email,
+                    token: this.authData.token,
+                    password : this.authData.password,
+                    confirm_password : this.authData.confirm_password,
                 }
-                this.$store.dispatch(types.FORGOT_PASSWORD_ACTION , formData);
+                this.$store.dispatch(types.PASSWORD_RESET_ACTION , formData);
             }
         }
     }
 </script>
 
-<style>
+<style scoped>
+
 </style>

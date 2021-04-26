@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <style>
+            
+.reset__navbar{
+    position: fixed !important;
+    background-color: transparent;
+    width: 100%;
+    padding: 20px 0;
+    top:0;
+    z-index: 999;
+    transition: .3s linear;
+}
+
+.reset__inner__width{
+    max-width: 1250px;
+    margin: auto 5rem;
+    padding-top:20px;
+}
+
+
+.reset__navbar .reset__inner__width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reset__inner__width > .reset__logo{
+    text-align: center;
+    width: 190px;
+    height: 43px;
+    background-image: url('../../assets/img/resetlogo.png');
+}
+
+
+.reset__banner{
+    background-image: url(../../assets/img/resetBanner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.container > .row{
+    margin: 0 !important;
+}
+
+.reset__banner>.reset__container{
+    padding: 0 0 0 5rem !important;
+    margin: unset !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.reset__container h1 {
+    color: var(--white);
+    font-weight: var(--font-semi);
+    font-size: 36px;
+    margin-bottom: var(--mb-2);
+}
+
+.reset__prescription>p{
+    margin-bottom: var(--mb-4);
+    max-width: 70%;
+    color: var(--white);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.reset__container .btn-reset{
+    max-width:20rem;
+    padding: 18px 56px;
+    margin: var(--mb-2) 0px !important;
+    text-transform: capitalize;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--white);
+    background: transparent !important;
+    border: 3px solid var(--white);
+    border-radius: 10px;
+    position: unset import !important;
+}
+
+.reset__banner .reset__thank{
+    font-weight: 400;
+    font-weight: 18px;
+    color: var(--white);
+    position: absolute;
+    display:block;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px){
+    .reset__prescription>p{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .reset__inner__width{
+        max-width: 1250px;
+        margin: auto 3rem;
+        padding-top:20px;
+    }
+
+    .reset__banner>.reset__container{
+        padding: 0 3rem 0 3rem !important;
+    }
+
+    .reset__container .col-md-12{
+        text-align: center;
+    }
+
+    .reset__container h1{
+        font-size: 26px;
+    }
+    .reset__prescription>p{
+        max-width: 100%;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .reset__inner__width{
+        max-width: 1250px;
+        margin: auto 3rem;
+        padding-top:20px;
+    }
+
+    .reset__banner>.reset__container{
+        padding: 0 3rem 0 3rem !important;
+    }
+
+    .reset__container .col-md-12{
+        text-align: center;
+    }
+
+    .reset__container h1{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .reset__prescription>p{
+        max-width: 100%;
+        font-size: 15px;
+    }
+}
+        </style>
+    </head>
+
+<body>
+<nav class="reset__navbar">
+    <div class="reset__inner__width">
+    <a href="#" class="reset__logo"></a>
+    </div>
+</nav>
+<div class="reset__banner">
+    <div class="container reset__container">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <h1>Reset Your Password</h1>
+                </div>
+                <div class="reset__prescription">
+                    <p>
+                        Forgot your password? Don't panic. we got you.
+                        click on the button below to set a new one
+                    </p>
+                </div>
+                <a href="#" class="btn btn-reset">Reset Password</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p class="reset__thank">Thank you, MedHouse</p>
+    </div>
+</div>
+</body>
+</html>
