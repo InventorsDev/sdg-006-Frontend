@@ -1,7 +1,44 @@
-<html>
-    <head>
-        <style>
-            
+<template>
+    <div>
+       <nav class="reset__navbar">
+            <div class="reset__inner__width">
+            <a href="#" class="reset__logo"></a>
+            </div>
+        </nav>
+
+        <div class="reset__banner">
+            <div class="container reset__container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <h1>Reset Your Password</h1>
+                        </div>
+                        <div class="reset__prescription">
+                            <p>
+                                Forgot your password? Don't panic. we got you.
+                                click on the button below to set a new one
+                            </p>
+                        </div>
+                        <a href="#" class="btn btn-reset">Reset Password</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="reset__thank">Thank you, MedHouse</p>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: 'Reset',
+    }
+</script>
+
+<style scoped>
+/* ========== Reset Password Style =========== */
+
 .reset__navbar{
     position: fixed !important;
     background-color: transparent;
@@ -153,35 +190,4 @@
         font-size: 15px;
     }
 }
-        </style>
-    </head>
-
-<body>
-<nav class="reset__navbar">
-    <div class="reset__inner__width">
-    <a href="#" class="reset__logo"></a>
-    </div>
-</nav>
-<div class="reset__banner">
-    <div class="container reset__container">
-        <div class="row">
-            <div class="col-md-12">
-                <div>
-                    <h1>Reset Your Password</h1>
-                </div>
-                <div class="reset__prescription">
-                    <p>
-                        Forgot your password? Don't panic. we got you.
-                        click on the button below to set a new one
-                    </p>
-                </div>
-                <a href="#" class="btn btn-reset">Reset Password</a>
-            </div>
-        </div>
-    </div>
-    <div>
-        <p class="reset__thank">Thank you, MedHouse</p>
-    </div>
-</div>
-</body>
-</html>
+</style>

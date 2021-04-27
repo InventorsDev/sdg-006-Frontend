@@ -1,15 +1,12 @@
 import Homepage from '../screens/Homepage.vue';
 import Register from '../screens/auth/Register.vue';
-import Login from '../screens/auth/Login.vue';
+import Signin from '../screens/auth/signin.vue';
 import Forget from '../screens/auth/forget-pass.vue';
-import ResetPassword from '../screens/auth/ResetPassword';
-
-// import Dashboard from '../screens/dashboard/Dashboard.vue';
-import DashThree from '../screens/DashThree.vue';
+import DashTwo from '../screens/DashTwo.vue';
 import DashOne from '../screens/DashOne.vue';
-// import DashTwo from '../screens/DashTwo.vue';
 
 import { createRouter, createWebHistory } from 'vue-router'
+
 
 const Dashboard = () => import('../screens/dashboard/Dashboard.vue');  //lazy loading
 const medhouse_patients = (to, from, next) => {
@@ -32,59 +29,25 @@ const routes = [
         component: Homepage
     },
     {
+        path: '/',
+        name: 'DashOne',
+        component: DashOne
+    },
+    {
         path: '/register',
         name: 'Register',
-        component: Register,
-        beforeEnter:medhouse_guest
+        component: Register
     },
     {
-        path: '/login',
-        name: 'Login',
-        component: Login,
-        beforeEnter:medhouse_guest
+        path: '/signin',
+        name: 'Signin',
+        component: Signin
     },
     {
-        path: '/forget-password',
-        name: 'ForgetPassword',
-        component: Forget,
-        beforeEnter:medhouse_guest
-    },
-    {
-        path: '/reset-password/:token',
-        name: 'ResetPassword',
-        component: ResetPassword,
-        beforeEnter:medhouse_guest
-    },
-    {
-        path: '/dashboard',
-        name: 'Dashboard',
-        component: DashThree,
-        beforeEnter : medhouse_patients
-    },
-    // {
-    //     path: '/doctors',
-    //     name: 'doctors',
-    //     component: Doctor,
-    //     children : [
-    //         {
-    //             path : ':id/details'
-    //         },
-    //     ]
-    // },
-    // {
-    //     path: '/appointments',
-    //     name: 'appointments',
-    //     component: Appointment,
-    //     children : [
-    //         {
-    //             path : ':id'
-    //         },
-    //     ]
-    // },
-    {
-        path: '/:catchAll(.*)',
-        redirect : "/",
-    },
+        path: '/forget',
+        name: 'Forget',
+        component: Forget
+    }
 ]
 
 const router = createRouter({ history: createWebHistory(), routes })

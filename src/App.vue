@@ -5,16 +5,12 @@
 </template>
 
 <script>
-import Signin from './screens/auth/Login.vue'
-import * as types from './store/types'
+import Signin from './screens/auth/signin.vue'
 
 export default {
   name: 'App',
   components: {
     Signin
-  },
-  created() {
-    this.$store.dispatch(types.AUTO_LOGIN_ACTION);
   }
 }
 </script>
