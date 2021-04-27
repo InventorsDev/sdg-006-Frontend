@@ -7,12 +7,27 @@ import DashOne from '../screens/DashOne.vue';
 
 import { createRouter, createWebHistory } from 'vue-router'
 
+
+const Dashboard = () => import('../screens/dashboard/Dashboard.vue');  //lazy loading
+const medhouse_patients = (to, from, next) => {
+    const loggedIn = localStorage.getItem('token')
+    if(!loggedIn) next({name:'Login'}) //qwe
+    else next()
+}
+
+const medhouse_guest = (to, from, next) => {
+    const loggedIn = localStorage.getItem('token')
+    if(loggedIn) next({name:'Dashboard'})
+    else next()
+}
+
+
 const routes = [
-    // {
-    //     path: '/',
-    //     name: 'Home',
-    //     component: Homepage
-    // },
+    {
+        path: '/',
+        name: 'Home',
+        component: Homepage
+    },
     {
         path: '/',
         name: 'DashOne',
