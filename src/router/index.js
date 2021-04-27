@@ -14,7 +14,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 const Dashboard = () => import('../screens/dashboard/Dashboard.vue');  //lazy loading
 const medhouse_patients = (to, from, next) => {
     const loggedIn = localStorage.getItem('token')
-    if(!loggedIn) next({name:'Login'})
+    if(!loggedIn) next({name:'Login'}) //qwe
     else next()
 }
 
