@@ -13,13 +13,11 @@
                     <div class="icon cancel-btn">
                         <i class="fas fa-times"></i>
                     </div>
-                    <router-link to="/" tag="li" active-class="signin-button" exact>Explore</router-link>
+                    <a href="" class="active">Explore</a>
                     <a href="">English</a>
-                    <a href="" class="active">Become an Expert</a>
-                    <router-link to="/register" tag="li" active-class="signin-button" v-if="!auth">Sign Up</router-link>
-                    <router-link to="/login" tag="li" active-class="signin-button" v-if="!auth">Sign In</router-link>
-                    <router-link to="/dashboard" tag="li" active-class="signin-button" v-if="auth">Dashboard</router-link>
-                    <button class="" @click="handleLogout()" v-if="auth">Logout</button>
+                    <a href="">Become an Expert</a>
+                    <router-link to="/register">Sign Up</router-link>
+                    <router-link to="/signin"  class="signin-button">Sign In</router-link>
                 </div>
             </div>
         </nav>
@@ -27,22 +25,8 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import * as types from '../store/types'
-    
     export default {
         name: 'Navbar',
-        computed : {
-            ...mapGetters({
-                auth: types.IS_AUTHENTICATED
-            }),
-        },
-        methods :{
-            handleLogout() {
-                console.log('seen')
-                this.$store.dispatch(types.SIGN_OUT_ACTION)
-            }
-        }
     }
 </script>
 <style>

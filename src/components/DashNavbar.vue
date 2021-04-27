@@ -5,17 +5,17 @@
                 <a href="#" class="logo"></a>
                 <div class="dash__box">
                     <form action="">
-                        <img src="../../assets/img/dashboard/icons/search.png" alt="" class="fa-envelope">
+                        <img src="../assets/img/dashboard/icons/search.png" alt="" class="fa-envelope">
                         <input type="text" placeholder="Search">
                         <input type="submit" name="" value="Search" class="dashII__seaarch">
                     </form>
                 </div>
                 <div class="dash__navbar__menu">
-                    <router-link :to="{name : dashboard }" tag="li" active-class="nav__link active" exact>Dashboard</router-link>
-                    <router-link :to="{name : doctors }" tag="li" active-class="nav__link" exact>Doctors</router-link>
-                    <router-link :to="{name : appointments }" tag="li" active-class="nav__link" exact>Appointments</router-link>
-                    <a href=""><img src="../../assets/img/dashboard/icons/Chat.png" alt=""></a>
-                    <a href="" class=""><img src="../../assets/img/dashboard/icons/call.png" alt=""></a>
+                    <a href="#" class="nav__link active">Dashboard</a>
+                    <a href="#" class="nav__link">Doctors</a>
+                    <a href="#" class="nav__link">Appointments</a>
+                    <a href=""><img src="../assets/img/dashboard/icons/Chat.png" alt=""></a>
+                    <a href="" class=""><img src="../assets/img/dashboard/icons/call.png" alt=""></a>
                 </div>
             </div>
         </nav>

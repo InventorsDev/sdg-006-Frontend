@@ -14,13 +14,13 @@
                     <p>Please enter your email address and we'll send you a link to reset your password.</p>
                 </div>
 
-                <form class="signin-form">
+                <form action="" class="signin-form">
                     <label for="">Email address</label>
                     <div class="input-field">
-                    <img src="../../assets/img/icons/EnvelopeSimple.png" alt="" class="fa-envelope">
-                    <input type="text" placeholder="Email Address" v-model="authData.email">
+                    <img src="../../assets/img/EnvelopeSimple.png" alt="" class="fa-envelope">
+                    <input type="text" placeholder="Email Address">
                     </div>
-                    <button class="btn sign-up" :disabled = "getStatus" @click="handleForgotPassword()">Submit</button>
+                    <button class="btn sign-up" >Submit</button>
                 </form>
 
                 <div class="terms">
@@ -44,31 +44,8 @@
 </template>
 
 <script>
-import * as types from '../../store/types'
-import { mapGetters } from 'vuex';
-
     export default {
         name: 'Forget',
-        data () {
-            return {
-                authData : {
-                    email: "",
-                }
-            }
-        },
-        computed : {
-            ...mapGetters({
-                getStatus : types.AUTH_STATE
-            })
-        },
-        methods : {
-            handleForgotPassword() {
-                const formData = {
-                    email: this.authData.email,
-                }
-                this.$store.dispatch(types.FORGOT_PASSWORD_ACTION , formData);
-            }
-        }
     }
 </script>
 
