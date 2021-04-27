@@ -320,7 +320,7 @@
 </template>
 
 <script>
-    import DashNavbar from '../components/DashNavbar.vue'
+    import DashNavbar from '../components/dashboard/DashNavbar.vue';
 
     export default {
         name: "DashOne",

@@ -185,7 +185,7 @@
 </template>
 
 <script>
-import DashNavbar from '../components/DashNavbar';
+import DashNavbar from '../components/dashboard/DashNavbar.vue';
 
 
 export default {

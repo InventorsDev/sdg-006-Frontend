@@ -6,7 +6,7 @@
                 <h2>Find the perfect Doctor <br>and book an appointment</h2>
                 <div class="box ">
                     <form action="">
-                        <img src="../assets/img/search.png" alt="" class="fa-envelope">
+                        <img src="../assets/img/icons/search.png" alt="" class="fa-envelope">
                         <input type="text" placeholder="Try “Radiologists” ">
                         <input type="submit" name="" value="Search">
                     </form>
@@ -17,6 +17,7 @@
                     <ul>
                         <li><a href="#">Pediatricians</a></li>
                         <li><a href="#">Cardiologists</a></li>
+                        <li><a href="#">{{ name }}</a></li>
                         <li><a href="#">Psychiatrists</a></li>
                     </ul>
                 </div>
@@ -36,6 +37,11 @@ export default {
   name: 'Homepage',
   components:{
       Navbar
+  },
+  computed : {
+      name() {
+          return this.$store.state.name;
+      }
   }
 }
 </script>
