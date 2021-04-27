@@ -15,22 +15,22 @@
 
                     <p class="mobile-signin">Sign In</p>
                     <div class="sign-in-google">
-                    <button class="btn"> <img src="../../assets/img/icons/google.png" class="google mr-3" alt="">Sign in with Google</button>
+                    <button class="btn"> <img src="../../assets/img/google.png" class="google mr-3" alt="">Sign in with Google</button>
                     </div>
                     <p class="divider">or</p>
                 </div>
 
-                <form class="signin-form">
+                <form action="" class="signin-form">
                     <label for="">Email address</label>
                     <div class="input-field">
-                    <img src="../../assets/img/icons/EnvelopeSimple.png" alt="" class="" >
-                    <input type="text" placeholder="Email Address" v-model="authData.email">
+                    <img src="../../assets/img/EnvelopeSimple.png" alt="" class="">
+                    <input type="text" placeholder="Email Address">
                     </div>
 
                     <label for="">Password</label>
                     <div class="input-field">
-                    <img src="../../assets/img/icons/Lock.png" alt="" class="">
-                    <input type="text" placeholder="Enter your password" v-model="authData.password">
+                    <img src="../../assets/img/Lock.png" alt="" class="">
+                    <input type="text" placeholder="Enter your password">
                     </div>
 
                     <div class="forget-password">
@@ -39,22 +39,21 @@
                         <label for="remember_me">Remember me</label>
                     </div>
                     <div>
-                        <router-link to="/forget-password"><h3>Forget Password?</h3></router-link>
-                        <router-link to="/"><h3>Home</h3></router-link>
+                        <router-link to="/forget"><h3>Forget Password?</h3></router-link>
                         <!-- Forget Password? -->
                     </div>
                     </div>
-                    <button class="btn sign-up" @click.prevent="handleLogin()" :disabled = "getStatus">Sign in</button>
+                    <button class="btn sign-up">Sign in</button>
                 </form>
-                
+
                 <p class="mobile__divider">or</p>
 
                 <div class="sign-in-google mobile-sign-in-google">
-                    <button class="btn"> <img src="../../assets/img/icons/google.png" class="google mr-3" alt="">Sign in with Google</button>
+                    <button class="btn"> <img src="../../assets/img/google.png" class="google mr-3" alt="">Sign in with Google</button>
                 </div>
 
                 <div class="account">
-                    <p> <span>Not registered yet?</span><router-link to="/register">Create an Account</router-link></p>
+                    <p> <span>Not registered yet?</span>Create an Account</p>
                 </div>
 
                 <div class="terms">
@@ -73,33 +72,9 @@
 </template>
 
 <script>
-import * as types from '../../store/types'
-import { mapGetters } from 'vuex';
 
 export default {
-  name: 'Login',
-  data () {
-        return {
-            authData : {
-                email: "",
-                password: "",
-            }
-        }
-    },
-    computed : {
-        ...mapGetters({
-            getStatus : types.AUTH_STATE
-        })
-    },
-    methods : {
-        handleLogin() {
-            const formData = {
-                email: this.authData.email,
-                password: this.authData.password,
-            }
-            this.$store.dispatch(types.LOGIN_ACTION , formData);
-        }
-    }
+  name: 'Signin',
 }
 </script>
 
