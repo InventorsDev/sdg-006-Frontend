@@ -8,10 +8,10 @@
 
                 <div class="dashII__form" >
                     <form action="">
-                        <img src="../../assets/img/search.png" alt="" class="search__icon">
+                        <img src="../../assets/img/icons/search.png" alt="" class="search__icon">
                         <input type="text" placeholder="Find doctor" class="mr-3">
                         <div class="filter">
-                            <img src="../../assets/img/dashboard/Filter.png" alt="">
+                            <img src="../../assets/img/dashboard/icons/Filter.png" alt="">
                         </div>
                     </form>
                 </div>
@@ -19,47 +19,47 @@
                 <div class="expert__online">
                     <div class="active__expert">
                         <img src="../../assets/img/dashboard/online-doc/1.png" alt="">
-                        <img src="../../assets/img/dashboard/online-icon.png" alt=""  class="online">
+                        <img src="../../assets/img/dashboard/icons/online-icon.png" alt=""  class="online">
                     </div>
                     
                     <div class="active__expert">
                         <img src="../../assets/img/dashboard/online-doc/2.png" alt="">
-                        <img src="../../assets/img/dashboard/online-icon.png" alt=""  class="online">
+                        <img src="../../assets/img/dashboard/icons/online-icon.png" alt=""  class="online">
                     </div>
 
                     <div class="active__expert">
                         <img src="../../assets/img/dashboard/online-doc/3.png" alt="">
-                        <img src="../../assets/img/dashboard/online-icon.png" alt=""  class="online">
+                        <img src="../../assets/img/dashboard/icons/online-icon.png" alt=""  class="online">
                     </div>
 
                     <div class="active__expert">
                         <img src="../../assets/img/dashboard/online-doc/4.png" alt="">
-                        <img src="../../assets/img/dashboard/online-icon.png" alt=""  class="online">
+                        <img src="../../assets/img/dashboard/icons/online-icon.png" alt=""  class="online">
                     </div>
 
                     <div class="active__expert">
                         <img src="../../assets/img/dashboard/online-doc/5.png" alt="">
-                        <img src="../../assets/img/dashboard/online-icon.png" alt=""  class="online">
+                        <img src="../../assets/img/dashboard/icons/online-icon.png" alt=""  class="online">
                     </div>
 
                     <div class="active__expert">
                         <img src="../../assets/img/dashboard/online-doc/6.png" alt="">
-                        <img src="../../assets/img/dashboard/online-icon.png" alt=""  class="online">
+                        <img src="../../assets/img/dashboard/icons/online-icon.png" alt=""  class="online">
                     </div>
 
                     <div class="active__expert">
                         <img src="../../assets/img/dashboard/online-doc/7.png" alt="">
-                        <img src="../../assets/img/dashboard/online-icon.png" alt=""  class="online">
+                        <img src="../../assets/img/dashboard/icons/online-icon.png" alt=""  class="online">
                     </div>
 
                     <div class="active__expert">
                         <img src="../../assets/img/dashboard/online-doc/8.png" alt="">
-                        <img src="../../assets/img/dashboard/online-icon.png" alt=""  class="online">
+                        <img src="../../assets/img/dashboard/icons/online-icon.png" alt=""  class="online">
                     </div>
 
                     <div class="active__expert">
                         <img src="../../assets/img/dashboard/online-doc/9.png" alt="">
-                        <img src="../../assets/img/dashboard/online-icon.png" alt=""  class="online">
+                        <img src="../../assets/img/dashboard/icons/online-icon.png" alt=""  class="online">
                     </div>
 
                     <div class="active__expert" style="background-color: black;">
@@ -79,7 +79,7 @@
                                 <p class="pt-2 pr-5 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                                 <div class="popular__card__reviews ">
-                                    <img src="../../assets/img/dashboard/Star.png" alt="">
+                                    <img src="../../assets/img/dashboard/icons/Star.png" alt="">
                                     <p>460 Reviews (5.0)</p>
                                 </div>
                             </div>  
@@ -95,7 +95,7 @@
                                 <p class="pt-2 pr-5 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                                 <div class="popular__card__reviews">
-                                    <img src="../../assets/img/dashboard/Star.png" alt="">
+                                    <img src="../../assets/img/dashboard/icons/Star.png" alt="">
                                     <p>460 Reviews (5.0)</p>
                                 </div>
                             </div>  
@@ -111,7 +111,7 @@
                                 <p class="pt-2 pr-5 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                                 <div class="popular__card__reviews">
-                                    <img src="../../assets/img/dashboard/Star.png" alt="">
+                                    <img src="../../assets/img/dashboard/icons/Star.png" alt="">
                                     <p>460 Reviews (5.0)</p>
                                 </div>
                             </div>  
@@ -127,7 +127,7 @@
                                 <p class="pt-2 pr-5 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                                 <div class="popular__card__reviews">
-                                    <img src="../../assets/img/dashboard/Star.png" alt="">
+                                    <img src="../../assets/img/dashboard/icons/Star.png" alt="">
                                     <p>460 Reviews (5.0)</p>
                                 </div>
                             </div>  
@@ -150,7 +150,7 @@
                                 <p class="pt-2 pr-5 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                                 <div class="popular__card__reviews">
-                                    <img src="../../assets/img/dashboard/Star.png" alt="">
+                                    <img src="../../assets/img/dashboard/icons/Star.png" alt="">
                                     <p>460 Reviews (5.0)</p>
                                 </div>
                             </div>  
@@ -166,7 +166,7 @@
                                 <p class="pt-2 pr-5 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                                 <div class="popular__card__reviews">
-                                    <img src="../../assets/img/dashboard/Star.png" alt="">
+                                    <img src="../../assets/img/dashboard/icons/Star.png" alt="">
                                     <p>460 Reviews (5.0)</p>
                                 </div>
                             </div>  
@@ -182,7 +182,7 @@
                                 <p class="pt-2 pr-5 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                                 <div class="popular__card__reviews">
-                                    <img src="../../assets/img/dashboard/Star.png" alt="">
+                                    <img src="../../assets/img/dashboard/icons/Star.png" alt="">
                                     <p>460 Reviews (5.0)</p>
                                 </div>
                             </div>  
@@ -198,7 +198,7 @@
                                 <p class="pt-2 pr-5 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                                 <div class="popular__card__reviews">
-                                    <img src="../../assets/img/dashboard/Star.png" alt="">
+                                    <img src="../../assets/img/dashboard/icons/Star.png" alt="">
                                     <p>460 Reviews (5.0)</p>
                                 </div>
                             </div>  
@@ -211,24 +211,31 @@
                 
             </div>
     
-            <div class="dashII__scroll dashII__right pt-2">
-                <div class="dash__right__container">
+            <div class="dashII__scroll dashII__right no__line pt-2">
+                <div class="">
                     <div class="notifications_container">
                         <div class="notification_picture mr-2">
                             <img src="../../assets/img/dashboard/expert1.png" alt="">
                         </div>
                         <div class="notify__box notification_alarm">
-                            <img src="../../assets/img/dashboard/Notification.png" alt="" class="mr-2">
-                            <img src="../../assets/img/dashboard/nofify.png" alt="" class="nofity_me">
+                            <img src="../../assets/img/dashboard/icons/Notification.png" alt="" class="mr-2">
+                            <img src="../../assets/img/dashboard/icons/notify.png" alt="" class="nofity_me">
                         </div>
                     </div>
                     <div class="mt-5 mb-5">
                         <img src="../../assets/img/dashboard/dashii-right.png" alt="">
                     </div>
+                     <div class="logout">
+                        <a href="#">
+                            <p class="mr-2">Log Out</p>
+                            <img src="../..//assets/img/dashboard/icons/Logout.png" alt="" class="mr-3">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+    </div> 
 </template>
 
 <script>
@@ -238,6 +245,6 @@ export default {
     name: 'Dashboard',
     components: {
         DashNavbar,
-    }
-}
+        }
+        }
 </script>

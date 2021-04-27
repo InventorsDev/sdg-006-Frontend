@@ -17,7 +17,7 @@
                 <form class="signin-form">
                     <label for="">Email address</label>
                     <div class="input-field">
-                    <img src="../../assets/img/EnvelopeSimple.png" alt="" class="fa-envelope">
+                    <img src="../../assets/img/icons/EnvelopeSimple.png" alt="" class="fa-envelope">
                     <input type="text" placeholder="Email Address" v-model="authData.email">
                     </div>
                     <button class="btn sign-up" :disabled = "getStatus" @click="handleForgotPassword()">Submit</button>

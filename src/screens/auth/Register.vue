@@ -16,10 +16,10 @@
             <p class="mobile-signin">Sign Up</p>
 
             <div class="sign-in-google mobile-sign-in-google">
-                <button class="btn"> <img src="../../assets/img/google.png" class="google mr-3" alt="">Sign in with Google</button>
+                <button class="btn"> <img src="../../assets/img/icons/google.png" class="google mr-3" alt="">Sign in with Google</button>
             </div>
             <div class="sign-in-google">
-            <button class="btn"> <img src="../../assets/img/google.png" class="google mr-4" alt="">Sign in with Google</button>
+            <button class="btn"> <img src="../../assets/img/icons/google.png" class="google mr-4" alt="">Sign in with Google</button>
             </div>
             <p class="mobile__divider">or</p>
             <p class="divider">or</p>
@@ -28,29 +28,29 @@
         <form class="signin-form">
             <label for="">First Name</label>
             <div class="input-field Name__boxShadow">
-                <img src="../../assets/img/user.png" alt="" class="fa-envelope">
+                <img src="../../assets/img/icons/user.png" alt="" class="fa-envelope">
                 <input type="text" placeholder="First Name" class="" v-model="authData.firstname">
             </div>
             <label for="">Last Name</label>
             <div class="input-field  Name__boxShadow">
-                <img src="../../assets/img/user.png" alt="" class="fa-envelope">
+                <img src="../../assets/img/icons/user.png" alt="" class="fa-envelope">
                 <input type="text" placeholder="Last Name" class="" v-model="authData.lastname">
             </div>
             <label for="">Email address</label>
             <div class="input-field">
-                <img src="../../assets/img/EnvelopeSimple.png" alt="" class="fa-envelope">
+                <img src="../../assets/img/icons/EnvelopeSimple.png" alt="" class="fa-envelope">
                 <input type="text" placeholder="Email Address" v-model="authData.email">
             </div>
 
             <label for="">Password</label>
             <div class="input-field">
-                <img src="../../assets/img/Lock.png" alt="" class="fa-lock">
+                <img src="../../assets/img/icons/Lock.png" alt="" class="fa-lock">
                 <input type="text" placeholder="Enter your password" v-model="authData.password">
             </div>
 
             <label for="">Phone Number</label>
             <div class="input-field">
-                <img src="../../assets/img/Lock.png" alt="" class="fa-lock">
+                <img src="../../assets/img/icons/Lock.png" alt="" class="fa-lock">
                 <input type="text" placeholder="Confirm your password" v-model="authData.phone_number">
             </div>
 

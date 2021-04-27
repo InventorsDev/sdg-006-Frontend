@@ -15,7 +15,7 @@
 
                     <p class="mobile-signin">Sign In</p>
                     <div class="sign-in-google">
-                    <button class="btn"> <img src="../../assets/img/google.png" class="google mr-3" alt="">Sign in with Google</button>
+                    <button class="btn"> <img src="../../assets/img/icons/google.png" class="google mr-3" alt="">Sign in with Google</button>
                     </div>
                     <p class="divider">or</p>
                 </div>
@@ -23,13 +23,13 @@
                 <form class="signin-form">
                     <label for="">Email address</label>
                     <div class="input-field">
-                    <img src="../../assets/img/EnvelopeSimple.png" alt="" class="" >
+                    <img src="../../assets/img/icons/EnvelopeSimple.png" alt="" class="" >
                     <input type="text" placeholder="Email Address" v-model="authData.email">
                     </div>
 
                     <label for="">Password</label>
                     <div class="input-field">
-                    <img src="../../assets/img/Lock.png" alt="" class="">
+                    <img src="../../assets/img/icons/Lock.png" alt="" class="">
                     <input type="text" placeholder="Enter your password" v-model="authData.password">
                     </div>
 
@@ -50,7 +50,7 @@
                 <p class="mobile__divider">or</p>
 
                 <div class="sign-in-google mobile-sign-in-google">
-                    <button class="btn"> <img src="../../assets/img/google.png" class="google mr-3" alt="">Sign in with Google</button>
+                    <button class="btn"> <img src="../../assets/img/icons/google.png" class="google mr-3" alt="">Sign in with Google</button>
                 </div>
 
                 <div class="account">

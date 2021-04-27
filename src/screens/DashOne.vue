@@ -1,6 +1,7 @@
 <template>
     <div>
         <DashNavbar/>
+
         <div class="patient__name">
             <h1>Hello<span>, Opeoluwa!</span></h1>
         </div>
@@ -11,7 +12,7 @@
                     <img src="../assets/img/dashboard/1.png" alt="">
                     <div class="new__appointment">
                         <div class="add">
-                            <img src="../assets/img/dashboard/+.png" alt="">
+                            <img src="../assets/img/dashboard/icons/+.png" alt="">
                         </div> 
                         <h3>New<br/>Appointment</h3>
                     </div>
@@ -45,14 +46,16 @@
                             </div>
                             <div class="doc doc__action">
                                 <div class="appointment">
-                                    <button class="btn btn-primary">Appointment</button> 
+                                    <button class="btn btn-offline">Appointment</button> 
                                 </div>
                                 <div class="chat">
-                                    <img src="../assets/img/dashboard/Chat.png" alt="">
+                                    <img src="../assets/img/dashboard/icons/Chat.png" alt="">
                                 </div>
                                 <div class="chat">
-                                    <img src="../assets/img/dashboard/Video.png" alt="">
+                                    <img src="../assets/img/dashboard/icons/Video.png" alt="">
                                 </div>
+                            </div>
+                            <div class="current-offline">
                             </div>
                         </div>
                         
@@ -80,14 +83,17 @@
                             </div>
                             <div class="doc doc__action">
                                 <div class="appointment">
-                                    <button class="btn btn-primary">Appointment</button> 
+                                    <button class="btn btn-online">Appointment</button> 
                                 </div>
                                 <div class="chat">
-                                    <img src="../assets/img/dashboard/Chat.png" alt="">
+                                    <img src="../assets/img/dashboard/icons/Chat.png" alt="">
                                 </div>
                                 <div class="chat">
-                                    <img src="../assets/img/dashboard/Video.png" alt="">
+                                    <img src="../assets/img/dashboard/icons/Video.png" alt="">
                                 </div>
+                            </div>
+                            <div class="current-online">
+
                             </div>
                         </div>
                     </div>
@@ -163,23 +169,128 @@
                     </div>
                 </div>
             </div>
-            <div class="sideBar sideBar__right">
-                <div class="">
+            <div class="sideBar sideBar__right no__line">
+                <div class="dashI">
                     <div class="notifications_container">
                         <div class="notification_picture mr-2">
                             <img src="../assets/img/dashboard/expert1.png" alt="">
                         </div>
                         <div class="notify__box notification_alarm">
-                            <img src="../assets/img/dashboard/Notification.png" alt="">
-                            <img src="../assets/img/dashboard/nofify.png" alt="" class="nofity_me">
+                            <img src="../assets/img/dashboard/icons/Notification.png" alt="">
+                            <img src="../assets/img/dashboard/icons/notify.png" alt="" class="nofity_me">
+                        </div>
+                    </div>
+                    <h2>My Doctors</h2>
+                    <div class="my__doc sideBar no__line">
+                        <div class="my-doc doc__action">
+                            <div class="my-doc doc__title">
+                                <img src="../assets/img/dashboard/expert2.png" alt="" class="mr-2">
+                                <div class="">
+                                    <h3>Dr. Esther Omobolale</h3>
+                                    <p>Heart Surgeon, Lagos, Nigeria</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="chat mr-2">
+                                    <img src="../assets/img/dashboard/icons/Chat.png" alt="">
+                                </div>
+                                <div class="chat">
+                                    <img src="../assets/img/dashboard/icons/Video.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-doc doc__action">
+                            <div class="my-doc doc__title">
+                                <img src="../assets/img/dashboard/expert2.png" alt="" class="mr-2">
+                                <div class="">
+                                    <h3>Jane Coper</h3>
+                                    <p>Medical Assistant</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="chat mr-2">
+                                    <img src="../assets/img/dashboard/icons/Chat.png" alt="">
+                                </div>
+                                <div class="chat">
+                                    <img src="../assets/img/dashboard/icons/Video.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-doc doc__action">
+                            <div class="my-doc doc__title">
+                                <img src="../assets/img/dashboard/expert2.png" alt="" class="mr-2">
+                                <div class="">
+                                    <h3>Eleanor Pena</h3>
+                                    <p>Heart Surgeon, Lagos, Nigeria</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="chat mr-2">
+                                    <img src="../assets/img/dashboard/icons/Chat.png" alt="">
+                                </div>
+                                <div class="chat">
+                                    <img src="../assets/img/dashboard/icons/Video.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-doc doc__action">
+                            <div class="my-doc doc__title">
+                                <img src="../assets/img/dashboard/expert2.png" alt="" class="mr-2">
+                                <div class="">
+                                    <h3>Ola Abiodun</h3>
+                                    <p>Heart Surgeon, Lagos, Nigeria</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="chat mr-2">
+                                    <img src="../assets/img/dashboard/icons/Chat.png" alt="">
+                                </div>
+                                <div class="chat">
+                                    <img src="../assets/img/dashboard/icons/Video.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-doc doc__action">
+                            <div class="my-doc doc__title">
+                                <img src="../assets/img/dashboard/expert2.png" alt="" class="mr-2">
+                                <div class="">
+                                    <h3>Ogunde Ope</h3>
+                                    <p>Heart Surgeon, Lagos, Nigeria</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="chat mr-2">
+                                    <img src="../assets/img/dashboard/icons/Chat.png" alt="">
+                                </div>
+                                <div class="chat">
+                                    <img src="../assets/img/dashboard/icons/Video.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-doc doc__action">
+                            <div class="my-doc doc__title">
+                                <img src="../assets/img/dashboard/expert2.png" alt="" class="mr-2">
+                                <div class="">
+                                    <h3>Chukudi joy</h3>
+                                    <p>Heart Surgeon, Lagos, Nigeria</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="chat mr-2">
+                                    <img src="../assets/img/dashboard/icons/Chat.png" alt="">
+                                </div>
+                                <div class="chat">
+                                    <img src="../assets/img/dashboard/icons/Video.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <p>Active Activities</p>
                     <div class="calendar">              
                         <div class="header">
-                            <a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><img src="../assets/img/dashboard/arrow_left.png" alt=""></a>
+                            <a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><img src="../assets/img/dashboard/icons/arrow_left.png" alt=""></a>
                             <div class="text" data-render="month-year"></div>
-                            <a data-action="next-month" href="javascript:void(0)" title="Next Month"><img src="../assets/img/dashboard/arrow_right.png" alt=""></a>
+                            <a data-action="next-month" href="javascript:void(0)" title="Next Month"><img src="../assets/img/dashboard/icons/arrow_right.png" alt=""></a>
                         </div>
                         <div class="months" data-flow="left">
                             <div class="month month-a">
@@ -196,15 +307,20 @@
                             </div>
                         </div>
                     </div>
+                    <div class="logout">
+                        <a href="#">
+                            <p class="mr-2">Log Out</p>
+                            <img src="../assets/img/dashboard/icons/Logout.png" alt="" class="mr-3">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 
 <script>
-    import DashNavbar from '../components/DashNavbar.vue'
+    import DashNavbar from '../components/dashboard/DashNavbar.vue';
 
     export default {
         name: "DashOne",

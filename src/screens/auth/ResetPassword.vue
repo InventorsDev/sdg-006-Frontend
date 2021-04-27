@@ -18,12 +18,12 @@
                 <form action="" class="signin-form">
                     <label for="">New Password</label>
                     <div class="input-field">
-                        <img src="../../assets/img/Lock.png" alt="" class="fa-lock">
+                        <img src="../../assets/img/icons/Lock.png" alt="" class="fa-lock">
                         <input type="text" placeholder="Enter your password" v-model="authData.password">
                     </div>
                     <label for="">Confirm Password</label>
                     <div class="input-field">
-                        <img src="../../assets/img/Lock.png" alt="" class="fa-lock">
+                        <img src="../../assets/img/icons/Lock.png" alt="" class="fa-lock">
                         <input type="text" placeholder="Confirm your password" v-model="authData.confirm_password">
                     </div>
                     <button class="btn sign-up" >Submit</button>

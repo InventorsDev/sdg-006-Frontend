@@ -5,8 +5,8 @@ import Forget from '../screens/auth/forget-pass.vue';
 import ResetPassword from '../screens/auth/ResetPassword';
 
 // import Dashboard from '../screens/dashboard/Dashboard.vue';
-// import DashTwo from '../screens/DashTwo.vue';
-// import DashOne from '../screens/DashOne.vue';
+import DashThree from '../screens/DashThree.vue';
+import DashOne from '../screens/DashOne.vue';
 
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -57,7 +57,7 @@ const routes = [
     {
         path: '/dashboard',
         name: 'Dashboard',
-        component: Dashboard,
+        component: DashOne,
         beforeEnter : medhouse_patients
     },
     // {
